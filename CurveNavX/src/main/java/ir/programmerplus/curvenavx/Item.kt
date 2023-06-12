@@ -12,5 +12,5 @@ class Item @JvmOverloads constructor(
     var extraPadding: Int = 0,
     count: String?
 ) {
-    var count: String = if (count.isNullOrEmpty()) "" else count
+    var count: String = if (count.isNullOrEmpty()) NavigationCell.EMPTY else count
 }

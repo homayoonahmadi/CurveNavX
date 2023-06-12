@@ -16,7 +16,6 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
-import androidx.annotation.DrawableRes
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import ir.programmerplus.curvenavx.NavigationCell.Companion.EMPTY
 import kotlin.math.abs
@@ -574,10 +573,6 @@ class BottomNavigation @JvmOverloads constructor(
         items.forEach {
             clearCount(it.id)
         }
-    }
-
-    fun setAnimationDuration(duration: Int) {
-        animationDuration = duration
     }
 
     // -------------------- Listener Setters -----------------------

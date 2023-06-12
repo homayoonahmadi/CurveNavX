@@ -1,3 +1,3 @@
 package ir.programmerplus.curvenavx
 
-internal typealias IBottomNavigationListener = (item: BottomNavigation.Item) -> Unit
+internal typealias IBottomNavigationListener = (item: Item) -> Unit

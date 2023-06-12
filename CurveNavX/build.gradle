@@ -24,12 +24,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = '1.8'
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     buildFeatures {
@@ -49,7 +45,7 @@ afterEvaluate {
 
                 groupId = 'ir.programmerplus.curvenavx'
                 artifactId = 'curvenavx'
-                version = '1.0.0'
+                version = '1.1.0'
 
                 pom {
                     name = 'CurveNavX'

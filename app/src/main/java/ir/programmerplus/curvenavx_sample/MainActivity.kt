@@ -19,6 +19,5 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnShowListener { item ->
             binding.bottomNavigation.clearCountDelayed(item.id, 200)
         }
-        binding.bottomNavigation.setAnimationDuration(10)
     }
 }
