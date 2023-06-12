@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurveNavX</string>
+    <string name="home_page">Home</string>
+    <string name="transactions">Transactions</string>
+    <string name="customers_club">Customers Club</string>
+    <string name="profile">Profile</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+</resources>

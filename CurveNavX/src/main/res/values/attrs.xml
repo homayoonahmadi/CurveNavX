@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomNavigation">
+        <attr name="defaultIconColor" format="color" />
+        <attr name="selectedIconColor" format="color" />
+        <attr name="backgroundBottomColor" format="color" />
+        <attr name="circleColor" format="color" />
+        <attr name="countTextColor" format="color" />
+        <attr name="countBackgroundColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="hasAnimation" format="boolean" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="direction" format="enum">
+            <enum name="ltr" value="0" />
+            <enum name="rtl" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BottomNavigationCell">
+        <attr name="title" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="padding" format="dimension" />
+        <attr name="selected" format="boolean" />
+        <attr name="badgeCount" format="integer" />
+    </declare-styleable>
+</resources>

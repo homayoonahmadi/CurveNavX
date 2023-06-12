@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ir.programmerplus.curvenavx.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        app:animationDuration="200"
+        app:backgroundBottomColor="@color/cyan_700"
+        app:circleColor="@color/cyan_700"
+        app:countBackgroundColor="@color/orange_800"
+        app:countTextColor="@color/white"
+        app:defaultIconColor="@color/gray_350"
+        app:direction="rtl"
+        app:hasAnimation="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectedIconColor="@color/white"
+        app:shadowColor="@color/navigation_shadow">
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/avd_home"
+            app:padding="3dp"
+            app:selected="true"
+            app:title="@string/home_page" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="5"
+            app:icon="@drawable/avd_notification"
+            app:padding="3dp"
+            app:title="@string/notifications" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="19"
+            app:icon="@drawable/avd_settings"
+            app:padding="3dp"
+            app:title="@string/settings" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="1"
+            app:icon="@drawable/avd_profile"
+            app:padding="3dp"
+            app:title="@string/profile" />
+    </ir.programmerplus.curvenavx.BottomNavigation>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
