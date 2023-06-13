@@ -489,6 +489,7 @@ class BottomNavigation @JvmOverloads constructor(
      * This function renders and shows all items inside the list and if the item is selected then shows that item
      * with an animation if has enabled, else the item will be shows as disabled
      */
+    @Synchronized
     fun show(itemId: Int, enabledAnimation: Boolean = true) {
         for (i in items.indices) {
             val item = items[i]
@@ -499,7 +500,7 @@ class BottomNavigation @JvmOverloads constructor(
                 cell.enableCell(enabledAnimation)
                 onShowListener(item)
             } else {
-                cell.disableCell(hasAnimation)
+                cell.disableCell(enabledAnimation)
             }
         }
         selectedId = itemId
