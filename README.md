@@ -43,12 +43,58 @@ implementation 'ir.programmerplus.curvenavx:curvenavx:1.2.0'
 
 ```xml
 <ir.programmerplus.curvenavx.BottomNavigation
-    android:id="@+id/bottom_navigation"
-    app:animationDuration="200"
-    app:backgroundBottomColor="@color/cyan_700"
-    >
-    <!-- Add NavigationCell items here -->
-</ir.programmerplus.curvenavx.BottomNavigation>
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:theme="@style/BottomNavigation"
+        app:animationDuration="200"
+        app:backgroundBottomColor="@color/cyan_700"
+        app:circleColor="@color/cyan_700"
+        app:countBackgroundColor="@color/orange_800"
+        app:countTextColor="@color/white"
+        app:defaultIconColor="@color/gray_350"
+        app:direction="rtl"
+        app:hasAnimation="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectedIconColor="@color/white"
+        app:shadowColor="@color/navigation_shadow">
+
+        <!-- Add NavigationCell items here -->
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/avd_home"
+            app:padding="3dp"
+            app:selected="true"
+            app:title="@string/home_page" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="5"
+            app:icon="@drawable/avd_notification"
+            app:padding="3dp"
+            app:title="@string/notifications" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="19"
+            app:icon="@drawable/avd_settings"
+            app:padding="3dp"
+            app:title="@string/settings" />
+
+        <ir.programmerplus.curvenavx.NavigationCell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badgeCount="1"
+            app:icon="@drawable/avd_profile"
+            app:padding="3dp"
+            app:title="@string/profile" />
+    </ir.programmerplus.curvenavx.BottomNavigation>
 ```
 
 ### In Code:
