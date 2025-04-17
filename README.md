@@ -17,7 +17,7 @@ CurveNavX is an innovative Android library designed to enhance navigation experi
 - **Responsive Design**: Optimized for various screen sizes and orientations.
 - **High Performance**: Ensures smooth navigation without impacting app performance.
 
-## Installation
+## Add to your project
 
 ### Gradle
 
@@ -100,23 +100,23 @@ implementation 'ir.programmerplus.curvenavx:curvenavx:1.2.0'
 ### In Code:
 
 ```kotlin
-binding.bottomNavigation.setOnShowListener(item -> {
-    binding.bottomNavigation.clearCountDelayed(item.getId(), 200);
-});
+binding.bottomNavigation.setOnShowListener { item ->
+    binding.bottomNavigation.clearCountDelayed(item.id, 200)
+}
 ```
 
 ## API Reference
 
 Here's a table of the main methods available in CurveNavX:
 
-| Function | Description |
-| -------- | ----------- |
-| `show(int itemId)` | Shows the specified item with an optional animation. |
-| `setBadgeCount(int itemId, String count)` | Sets the badge count for the specified item. |
-| `getBadgeCount(int itemId)` | Gets the badge count for the specified item. |
-| `clearCount(int itemId)` | Clears the badge count for the specified item. |
+| Function                                          | Description                                                  |
+|---------------------------------------------------|--------------------------------------------------------------|
+| `show(int itemId)`                                | Shows the specified item with an optional animation.         |
+| `setBadgeCount(int itemId, String count)`         | Sets the badge count for the specified item.                 |
+| `getBadgeCount(int itemId)`                       | Gets the badge count for the specified item.                 |
+| `clearCount(int itemId)`                          | Clears the badge count for the specified item.               |
 | `clearCountDelayed(int itemId, long delayMillis)` | Clears the badge count for the specified item after a delay. |
-| `clearBadgeCounts()` | Clears badge counts for all items. |
+| `clearBadgeCounts()`                              | Clears badge counts for all items.                           |
 
 ## Contribution
 
@@ -124,7 +124,3 @@ Contributions to CurveNavX are always welcome. Whether it's feature requests, bu
 ## License
 
 CurveNavX is released under the MIT License.
-
-## Contact
-
-For any queries or suggestions, feel free to reach out to the maintainer at homayoon.ahmadi8@gmail.com.
