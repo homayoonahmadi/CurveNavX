@@ -3,11 +3,15 @@
 
 Curved bottom navigation component for Android. It's powerful and flexible.
 
-<!--- ![CurveNavX Screenshot](screenshot.png) --->
+<img src="https://github.com/user-attachments/assets/7e7247eb-5f05-4197-83ed-976c732a014d" width="60%"/>
+
 
 ## Introduction
 
 CurveNavX is an innovative Android library designed to enhance navigation experiences in Android applications. Offering a unique curved navigation bar, this library integrates seamlessly with Android apps, providing both functionality and aesthetic appeal.
+
+
+https://github.com/user-attachments/assets/c086ff11-8703-4c3b-9b2e-24b56971027b
 
 ## Features
 
@@ -118,9 +122,7 @@ Here's a table of the main methods available in CurveNavX:
 | `clearCountDelayed(int itemId, long delayMillis)` | Clears the badge count for the specified item after a delay. |
 | `clearBadgeCounts()`                              | Clears badge counts for all items.                           |
 
-## Contribution
 
-Contributions to CurveNavX are always welcome. Whether it's feature requests, bug reports, or pull requests, your involvement is highly appreciated.
 ## License
 
 CurveNavX is released under the MIT License.
